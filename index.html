@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Master — Интерактивный курс английского языка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>English Master: Практика & Структура Языка</h1>
+        <p>Изучение английского языка с нуля: теория, тренажеры, грамматика и экспресс-тест</p>
+    </header>
+
+    <nav>
+        <a href="#structure">Структура</a>
+        <a href="#alphabet">Алфавит</a>
+        <a href="#articles">Артикли</a>
+        <a href="#sentences">Предложения</a>
+        <a href="#orthography">Орфография & Времена</a>
+        <a href="#dictionary">Словарь</a>
+        <a href="#microtest">Микро-Тест</a>
+    </nav>
+
+    <main>
+        <!-- Banner Graphic SVG -->
+        <div class="section-card" style="text-align: center; padding: 1rem;">
+            <svg class="svg-banner" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="800" height="150" fill="#1e3a8a" rx="10"/>
+                <circle cx="120" cy="75" r="45" fill="#3b82f6" opacity="0.3"/>
+                <circle cx="680" cy="75" r="55" fill="#f59e0b" opacity="0.2"/>
+                <text x="400" y="70" font-family="Arial" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">Interactive English Practice Platform</text>
+                <text x="400" y="105" font-family="Arial" font-size="16" fill="#dbeafe" text-anchor="middle">Vocabulary • Grammar • Sentence Structure • Micro-Tests</text>
+            </svg>
+        </div>
+
+        <!-- Section 1: Language Structure & Vocabulary -->
+        <section id="structure" class="section-card">
+            <h2 class="section-title">1. Работа с лексикой и структура языка</h2>
+            <p>Английский язык обладает строгим порядком слов и аналитической структурой. Эффективная работа с лексикой включает:</p>
+            <ul style="margin: 1rem 0 1rem 2rem;">
+                <li><strong>Строгий порядок слов (SVO):</strong> Subject (Подлежащее) + Verb (Глагол) + Object (Дополнение).</li>
+                <li><strong>Употребление артиклей:</strong> Неопределенные (<em>a/an</em>) и определенный (<em>the</em>) изменяют значение слов.</li>
+                <li><strong>Фразовые глаголы и словообразование:</strong> Сочетания глаголов с предлогами (например, <em>look for</em>, <em>give up</em>).</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Alphabet & Phonetics -->
+        <section id="alphabet" class="section-card">
+            <h2 class="section-title">2. Стартовая тема: Алфавит и фонетика</h2>
+            <p>Английский алфавит включает 26 букв (5 гласных и 21 согласную). Важно не только знать буквы, но и сочетания букв.</p>
+            
+            <!-- SVG Illustration for English Alphabet -->
+            <div style="margin: 1rem 0; text-align: center;">
+                <svg width="100%" height="90" viewBox="0 0 600 90" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="600" height="90" fill="#f8fafc" rx="8" stroke="#e2e8f0"/>
+                    <text x="60" y="55" font-size="32" fill="#1e3a8a" font-weight="bold">Aa</text>
+                    <text x="150" y="55" font-size="32" fill="#1e3a8a" font-weight="bold">Bb</text>
+                    <text x="240" y="55" font-size="32" fill="#1e3a8a" font-weight="bold">Cc</text>
+                    <text x="330" y="55" font-size="32" fill="#d97706" font-weight="bold">Th</text>
+                    <text x="420" y="55" font-size="32" fill="#d97706" font-weight="bold">Sh</text>
+                    <text x="510" y="55" font-size="32" fill="#dc2626" font-weight="bold">Ch</text>
+                </svg>
+            </div>
+
+            <div class="trainer-box">
+                <h3>🏋️ Тренажер: Фонетика и буквосочетания</h3>
+                <p>Какое буквосочетание дает межзубные звуки [θ] и [ð] (как в словах <em>think</em>, <em>this</em>)?</p>
+                <input type="text" id="alphabet-input" placeholder="Введите буквосочетание (например: th)">
+                <button class="btn" onclick="checkAlphabet()">Проверить ответ</button>
+                <div id="alphabet-result"></div>
+            </div>
+        </section>
+
+        <!-- Section 3: Articles -->
+        <section id="articles" class="section-card">
+            <h2 class="section-title">3. Артикли (Articles: A, An, The)</h2>
+            <p>Правила использования артиклей в английском языке:</p>
+            <table style="margin-bottom: 1rem;">
+                <thead>
+                    <tr>
+                        <th>Артикль</th>
+                        <th>Когда используется</th>
+                        <th>Пример</th>
+                        <th>Перевод</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge">A</span></td>
+                        <td>Перед согласными звуками (исчисляемые в ед.ч.)</td>
+                        <td>a cat</td>
+                        <td>кошка (какая-то)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge">An</span></td>
+                        <td>Перед гласными звуками (a, e, i, o, u)</td>
+                        <td>an apple</td>
+                        <td>яблоко (какое-то)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge">The</span></td>
+                        <td>Конкретный или уникальный объект</td>
+                        <td>the Sun</td>
+                        <td>Солнце</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="trainer-box">
+                <h3>🏋️ Тренажер: Выберите правильный артикль</h3>
+                <p>1. ... cat (кошка): 
+                    <select id="art1">
+                        <option value="--">-- Выберите --</option>
+                        <option value="a">a</option>
+                        <option value="an">an</option>
+                        <option value="the">the</option>
+                    </select>
+                </p>
+                <p>2. ... apple (яблоко): 
+                    <select id="art2">
+                        <option value="--">-- Выберите --</option>
+                        <option value="a">a</option>
+                        <option value="an">an</option>
+                        <option value="the">the</option>
+                    </select>
+                </p>
+                <p>3. ... Sun (Солнце): 
+                    <select id="art3">
+                        <option value="--">-- Выберите --</option>
+                        <option value="a">a</option>
+                        <option value="an">an</option>
+                        <option value="the">the</option>
+                    </select>
+                </p>
+                <button class="btn" onclick="checkArticles()">Проверить артикли</button>
+                <div id="articles-result"></div>
+            </div>
+        </section>
+
+        <!-- Section 4: Sentence Building -->
+        <section id="sentences" class="section-card">
+            <h2 class="section-title">4. Составление предложений (Sentence Structure)</h2>
+            <p>В английском языке порядок слов фиксирован: <strong>Подлежащее + Сказуемое + Дополнение</strong>.</p>
+            
+            <div class="trainer-box">
+                <h3>🏋️ Конструктор предложений</h3>
+                <p>Составьте правильное предложение: <em>"Я изучаю английский"</em></p>
+                <div style="display: flex; gap: 10px; margin: 1rem 0;">
+                    <select id="sent-w1">
+                        <option value="learn">learn</option>
+                        <option value="I">I</option>
+                        <option value="English">English</option>
+                    </select>
+                    <select id="sent-w2">
+                        <option value="English">English</option>
+                        <option value="learn">learn</option>
+                        <option value="I">I</option>
+                    </select>
+                    <select id="sent-w3">
+                        <option value="I">I</option>
+                        <option value="English">English</option>
+                        <option value="learn">learn</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="checkSentence()">Проверить порядок слов</button>
+                <div id="sentence-result"></div>
+            </div>
+        </section>
+
+        <!-- Section 5: Orthography & Tenses -->
+        <section id="orthography" class="section-card">
+            <h2 class="section-title">5. Орфография и Времена (Present Perfect)</h2>
+            <p><strong>Орфография:</strong> С заглавной буквы всегда пишутся имена собственные, дня недели, месяцы, языки и местоимение <em>I</em> (Я).</p>
+            <p><strong>Настоящее совершенное время (Present Perfect):</strong> Показывает результат действия в настоящем. Формула: <em>have/has + V3 (Past Participle)</em>.</p>
+            <p><em>Пример: I have <strong>bought</strong> a book (Я купил книгу — результат: она у меня).</em></p>
+
+            <div class="trainer-box">
+                <h3>🏋️ Тренажер: Третья форма глагола (V3)</h3>
+                <p>Вставьте 3-ю форму (Past Participle) глагола <strong>buy</strong>:</p>
+                <p>I have <input type="text" id="tense-input" style="width: 150px; display: inline-block;" placeholder="форма V3"> a book.</p>
+                <button class="btn" onclick="checkTense()">Проверить</button>
+                <div id="tense-result"></div>
+            </div>
+        </section>
+
+        <!-- Section 6: Vocabulary / Dictionary -->
+        <section id="dictionary" class="section-card">
+            <h2 class="section-title">6. Базовый Словарик</h2>
+            <p>Интерактивный поиск по словарю:</p>
+            <input type="text" id="dictSearch" onkeyup="filterDictionary()" placeholder="Введите слово на русском или английском для фильтрации...">
+
+            <table id="dictTable">
+                <thead>
+                    <tr>
+                        <th>Английское слово</th>
+                        <th>Транскрипция</th>
+                        <th>Перевод</th>
+                        <th>Категория</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>hello</td><td>[həˈləʊ]</td><td>привет</td><td>Приветствия</td></tr>
+                    <tr><td>good morning</td><td>[ɡʊd ˈmɔːnɪŋ]</td><td>доброе утро</td><td>Приветствия</td></tr>
+                    <tr><td>thank you</td><td>[θæŋk juː]</td><td>спасибо</td><td>Вежливость</td></tr>
+                    <tr><td>please</td><td>[pliːz]</td><td>пожалуйста</td><td>Вежливость</td></tr>
+                    <tr><td>house</td><td>[haʊs]</td><td>дом</td><td>Существительные</td></tr>
+                    <tr><td>dog</td><td>[dɒɡ]</td><td>собака</td><td>Животные</td></tr>
+                    <tr><td>cat</td><td>[kæt]</td><td>кошка</td><td>Животные</td></tr>
+                    <tr><td>drink</td><td>[drɪŋk]</td><td>пить</td><td>Глаголы</td></tr>
+                    <tr><td>eat</td><td>[iːt]</td><td>есть/кушать</td><td>Глаголы</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 7: Global Micro-Test -->
+        <section id="microtest" class="section-card" style="border: 2px solid #2563eb;">
+            <h2 class="section-title">📝 Итоговый Микро-Тест</h2>
+            <p>Пройдите экспресс-тестирование, чтобы узнать свой текущий уровень знаний базового английского:</p>
+
+            <form id="quizForm" style="margin-top: 1.5rem;">
+                <div style="margin-bottom: 1.2rem;">
+                    <p><strong>1. Какое местоимение в английском ВСЕГДА пишется с заглавной буквы?</strong></p>
+                    <label><input type="radio" name="q1" value="a"> I (Я)</label><br>
+                    <label><input type="radio" name="q1" value="b"> You (Ты)</label><br>
+                    <label><input type="radio" name="q1" value="c"> We (Мы)</label>
+                </div>
+
+                <div style="margin-bottom: 1.2rem;">
+                    <p><strong>2. какой артикль нужно поставить перед словом "apple"?</strong></p>
+                    <label><input type="radio" name="q2" value="a"> a</label><br>
+                    <label><input type="radio" name="q2" value="b"> an</label><br>
+                    <label><input type="radio" name="q2" value="c"> zero article (без артикля)</label>
+                </div>
+
+                <div style="margin-bottom: 1.2rem;">
+                    <p><strong>3. Какой базовый порядок слов в утвердительном английском предложении?</strong></p>
+                    <label><input type="radio" name="q3" value="a"> Глагол + Подлежащее + Дополнение</label><br>
+                    <label><input type="radio" name="q3" value="b"> Подлежащее + Глагол + Дополнение</label><br>
+                    <label><input type="radio" name="q3" value="c"> Дополнение + Глагол + Подлежащее</label>
+                </div>
+
+                <div style="margin-bottom: 1.2rem;">
+                    <p><strong>4. Как переводится выражение "Thank you"?</strong></p>
+                    <label><input type="radio" name="q4" value="a"> Спасибо</label><br>
+                    <label><input type="radio" name="q4" value="b"> Пожалуйста</label><br>
+                    <label><input type="radio" name="q4" value="c"> Извините</label>
+                </div>
+
+                <div style="margin-bottom: 1.2rem;">
+                    <p><strong>5. Какая формула образует Present Perfect?</strong></p>
+                    <label><input type="radio" name="q5" value="a"> am/is/are + Ving</label><br>
+                    <label><input type="radio" name="q5" value="b"> will + V1</label><br>
+                    <label><input type="radio" name="q5" value="c"> have/has + V3</label>
+                </div>
+
+                <button type="button" class="btn btn-success" onclick="submitMicroTest()">Завершить тест и проверить результат</button>
+            </form>
+
+            <div id="microtest-result" class="trainer-box" style="display:none; margin-top:1.5rem; background:#dbeafe; border-color:#bfdbfe;"></div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
